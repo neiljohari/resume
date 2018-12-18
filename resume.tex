@@ -1,0 +1,120 @@
+%! TEX program = lualatex
+
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Dan
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% For hyperlinks
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+ colorlinks   = true,
+ urlcolor    = Violet
+}
+
+\newcommand{\ignoreoverfullhboxes}{\setlength{\hfuzz}{31pt}}
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\AtBeginEnvironment{cvsubsection}{\ignoreoverfullhboxes}
+
+% Set applicant's personal data for header
+\name{Neil Johari}
+\address{Ann Arbor, MI \linebreak \href{tel:+15165328612}{(516) 532-8612}}
+\contacts{\href{mailto:njohari@umich.edu}{njohari@umich.edu} \linebreak \href{mailto:neil@johari.tech}{neil@johari.tech} \linebreak \href{https://johari.tech}{https://johari.tech/}}
+
+
+\begin{document}
+    % Print the header
+    \makeheader
+          
+
+    \begin{cvsection}{Education}
+        \begin{cvsubsection}{Ann Arbor, MI}{University of Michigan}{September 2018 | April 2022}
+            \begin{itemize}
+                \item 
+                    Bachelor of Science in Engineering in Computer Science. 
+                    \hfill {GPA: 4.0}
+                    \vspace*{-4pt}
+            \end{itemize}
+        \end{cvsubsection}
+        \begin{cvsubsection}{Syosset, NY}{Syosset High School}{September 2014 | June 2018}
+            \begin{itemize}
+                \item 
+                    Diploma. Graduated with highest honors and Mastery in Science.
+                    \hfill {GPA: 100.0}
+                    \vspace*{-4pt}
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    \begin{cvsection}{Experience}
+        \begin{cvsubsection}{Website Developer}{Syosset High School}{September 2014 | Present}
+            \begin{itemize}%
+                \item \href{https://github.com/Syosset/syosset/}{Designed and programmed} the new \href{https://syosseths.com/}{Syosset Senior High School’s website} utilizing Ruby on Rails, MongoDB, and Redis (2017-present).
+                \item Directed a content management team as president of Web Development Club (2015-2018).
+            \end{itemize}
+        \end{cvsubsection}
+        \begin{cvsubsection}{Researcher}{Syosset High School}{September 2014 | June 2018}
+            \begin{itemize}%
+                \item \href{https://drive.google.com/open?id=0BwjeQIrDl4kCRGJPZHNoZWRIVFE}{Created a machine learning model} to analyze MRI scans of Alzheimer’s disease patients (2016-present).
+                \item Created a model of video game hours played due to social influence with an analysis through machine learning (2015-2016).
+                \item Conducted literary research on sleep deprivation (2014-2015).
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    \begin{cvsection}{Skills}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item Languages: English, Spanish, Hindi (Spoken).
+            \end{itemize}
+            \begin{itemize}
+                \item Computer Programming Skillset:  Ruby, Java, C++, Redis, ArduinoC, Python, MATLAB.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    \begin{cvsection}{Projects}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \setlength\itemsep{3pt}
+                \item \textbf{\href{https://github.com/neiljohari/scram}{Scram}}  Programmed a transparent Ruby permissions system gem with MongoDB integration.
+                \item \textbf{\href{https://github.com/NJayDevelopment/mongoid_forums) }{Mongoid Forums}} Developed a Ruby on Rails gem for forums with MongoDB integration.
+                \item \textbf{\href{https://dev.bukkit.org/projects/abp}{Autobroadcaster+}}  Published a server-wide scheduled broadcasting plugin for Minecraft.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    \begin{cvsection}{Awards}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \setlength\itemsep{3pt}
+                \item \textbf{Bernie Goudreau Memorial Award} (Syosset High School)  In recognition of achievement in mathematics and computer science. June 2018.
+                \item \textbf{Nassau County Legislature Citation} (Nassau County Legislator Josh Lafazan)  In recognition of leadership and community engagement. June 2018.
+                \item \textbf{Seal of Biliteracy} (New York State)  In recognition of proficiency in English \& Spanish. June 2018.
+                \item \textbf{Physics Olympics Certificate of Excellence} (American Association of Physics Teachers)  In recognition of distinction in the Physics Olympics hosted at Farmingdale State College. March 2018.
+                \item \textbf{1st Place at Andromeda} (New York State Science and Engineering Fair (NYSSEF)) and \linebreak \textbf{2nd Place at Invitational Science Fair} (WAC Lighting Foundation) For the creation a machine learning model to analyze MRI scans of Alzheimer’s disease patients using convolutional neural networks. March 2017.
+                \item \textbf{Gold Medal at Math Fair} (Alfred Kalfus Long Island Math Fair)  Awarded for a model of video game hours played due to social influence with an analysis through machine learning. May 2015.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+\end{document}
