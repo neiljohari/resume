@@ -36,6 +36,7 @@
  urlcolor    = Violet
 }
 
+% Ignore overfull for cvsubsection environment defined by the template
 \newcommand{\ignoreoverfullhboxes}{\setlength{\hfuzz}{31pt}}
 \usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
 \AtBeginEnvironment{cvsubsection}{\ignoreoverfullhboxes}
