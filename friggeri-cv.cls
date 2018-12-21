@@ -21,11 +21,12 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 
-\definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
-\definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{green}{HTML}{7E732F}
+\definecolor{orange}{HTML}{CC6600}
+\definecolor{purple}{HTML}{575294}
+\definecolor{red}{HTML}{7A121C}
+\definecolor{blue}{HTML}{587ABC}
+\definecolor{yellow}{HTML}{FFCB05}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -33,6 +34,7 @@
   \colorlet{purple}{gray}
   \colorlet{red}{gray}
   \colorlet{blue}{gray}
+  \colorlet{yellow}{gray}
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
@@ -121,10 +123,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   {%
     \color{%
       \ifcase\value{colorCounter}%
+        yellow\or%
         blue\or%
-        red\or%
         orange\or%
         green\or%
+        red\or%
         purple\else%
         headercolor\fi%
     } #1%
