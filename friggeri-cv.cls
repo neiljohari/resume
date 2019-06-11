@@ -9,6 +9,7 @@
 \LoadClass{article}
 
 
+
 %%%%%%%%%%
 % Colors %
 %%%%%%%%%%
@@ -117,6 +118,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Structure %
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
+\setlength{\parskip}{.25\bigskipamount plus .5\smallskipamount minus .5\smallskipamount}
+\setlength{\parsep}{.25\bigskipamount plus .5\smallskipamount minus .5\smallskipamount}
 
 \newcounter{colorCounter}
 \def\@sectioncolor#1{%
@@ -196,7 +199,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    \par\vspace{.5\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
   \begin{textblock}{3.6}(1.5, 4.33)
   \begin{flushright}
@@ -321,5 +324,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=1.7cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
